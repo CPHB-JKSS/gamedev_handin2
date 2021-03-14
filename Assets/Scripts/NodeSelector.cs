@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NodeSelector : MonoBehaviour
 {
-    static GameObject[] objects;
+    public static GameObject selectedObject;
 
     public Material materialStd;
 
@@ -36,11 +36,15 @@ public class NodeSelector : MonoBehaviour
             if (selected)
             {
                 rend.sharedMaterial = materialHover;
+                selectedObject = null;
+                print (selectedObject);
                 selected = false;
             }
             else
             {
                 rend.sharedMaterial = materialSelected;
+                selectedObject = gameObject;
+                print (selectedObject);
                 selected = true;
             }
         }
