@@ -5,7 +5,9 @@ public class SpawnScript : MonoBehaviour
 {
     public GameObject brute;
     private NavMeshAgent agent;
-    private Animator anim;
+    //private Animator anim;
+
+    Animation anim;
 
     public int spawnCount = 0;
 
@@ -16,7 +18,7 @@ public class SpawnScript : MonoBehaviour
     {
 
         agent = GetComponent<NavMeshAgent>();
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
 
         //Instantiate(brute, new Vector3(27, 1, 20), Quaternion.identity);
         //Instantiate(brute, new Vector3(27, 1, 18), Quaternion.identity);
@@ -31,8 +33,9 @@ public class SpawnScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(brute, new Vector3(26, 2, 19), Quaternion.identity);
+            GameObject bruteAI = Instantiate(brute, new Vector3(26, 2, 19), Quaternion.identity);
             spawnCount++;
+            anim = bruteAI.GetComponent<Animation>();
             Debug.Log(spawnCount);
         }
 
