@@ -8,6 +8,10 @@ Spillet er et tower-defence type. Idéen er at du har en række af 'enemies' som
 Hvis tilpas mange enemies når til endzone taber man spillet.
 Man bruge towers til at skyde enemies således at de ikke når frem til endzone.
 
+I spillet mangler der følgende implementering:
+Turrets kan ikke target enemies endnu, det bør dog godt kunne skyde når det er blevet etableret.
+Enemies spawner kun når man trykker på space-baren. Men fundamentet er der til at skabe et level med specifikke mængder af enemies m.m.
+
 - Prefabs + parenting
     Dette er blevet brugt til bla. at instantiere mange af samme type af objekt. Eksempelvis en enemy, som alle deler den samme logik.
 
