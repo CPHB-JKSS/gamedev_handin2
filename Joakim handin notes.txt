@@ -1,0 +1,19 @@
+I dette projekt har vi benyttet os af følgende topics i flow 2:
+    - Prefabs + parenting
+    - 3D Modelling, textures, mats, UV mapping
+    - Animations, Animator & IK
+    - Game Mechanics and Features
+
+Spillet er et tower-defence type. Idéen er at du har en række af 'enemies' som løber fra en startzone til en endzone.
+Hvis tilpas mange enemies når til endzone taber man spillet.
+Man bruge towers til at skyde enemies således at de ikke når frem til endzone.
+
+- Prefabs + parenting
+    Dette er blevet brugt til bla. at instantiere mange af samme type af objekt. Eksempelvis en enemy, som alle deler den samme logik.
+
+- 3D Modelling, textures, mats, UV mapping
+    Specifikt materials og en smule 3D modelling (stacking af game objects til at lave et turret bla.).
+
+
+- Animations, Animator & IK:
+    Der er delvist implementeret animationer på enemies, som har en idle animation. Løbe animationen er ikke implementeret korrekt endnu.
